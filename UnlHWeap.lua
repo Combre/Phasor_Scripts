@@ -28,7 +28,7 @@ score_limit = 5
 weapon = "weapons\\flamethrower\\flamethrower"
 weapon_message = "Unlimited flamethrower"
 
-local bool
+--local bool
 
 function GetRequiredVersion()
   return 10058
@@ -145,12 +145,12 @@ function OnVehicleEject(player, forceEject)
 end
 
 function OnDamageLookup(receiving_obj, causing_obj, tagdata, tagname)
-	if not bool then
-		writefloat(tagdata, 0x1D0, 0.0001)
-		writefloat(tagdata, 0x1D4, 0.0001)
-		writefloat(tagdata, 0x1D8, 0.0001)
-	end
-bool = false
+--	if not bool then
+--		writefloat(tagdata, 0x1D0, 0.0001)
+--		writefloat(tagdata, 0x1D4, 0.0001)
+--		writefloat(tagdata, 0x1D8, 0.0001)
+--	end
+--bool = false
 end
 
 function OnWeaponAssignment(player, object, count, tag)
